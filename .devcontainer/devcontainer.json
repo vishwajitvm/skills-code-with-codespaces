@@ -1,15 +1,10 @@
 {
-  "name": "My Codespace Dev Container",
-  "image": "mcr.microsoft.com/devcontainers/universal:2", 
-  "features": {
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "18"
-    },
-    "ghcr.io/devcontainers/features/python:1": {
-      "version": "3.11"
-    }
-  },
-  "postCreateCommand": "echo 'Welcome to my codespace!'",
+  "name": "Codespace for Skills!",
+  "image": "mcr.microsoft.com/vscode/devcontainers/universal:latest",
+  "remoteUser": "codespace",
+  "overrideCommand": false,
+
+  // New section to add extensions
   "customizations": {
     "vscode": {
       "extensions": [
